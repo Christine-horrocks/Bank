@@ -6,4 +6,9 @@ class Account
     @transactions = []
   end
 
+  def deposit(money)
+    deposit = {type: 'deposit', amount: money}
+    @transactions << deposit
+  end
+
 end
