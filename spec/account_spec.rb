@@ -22,9 +22,4 @@ describe Account do
     expect(subject.transactions).to eq([{ date: 10 / 10 / 10, credit: 300, debit: ' ', balance: 300 }, { date: 10 / 10 / 10, credit: ' ', debit: 100, balance: 200 }])
   end
 
-  it 'can print out the statement' do
-    subject.deposit(300, 10 / 10 / 10)
-    subject.withdraw(100, 10 / 10 / 10)
-    expect(subject.print_statement).to be("date || credit || debit || balance" "10/10/10|| 300 || || 300" "10/10/10|| || 100 || 200")
-  end
 end
