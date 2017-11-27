@@ -1,6 +1,4 @@
-# Bank
-
-## As Tech Test
+# Bank: A Tech Test
 
 ## User Stories
 
@@ -22,4 +20,11 @@ I want to a date attached to all of my transactions.
 
 * As a customer,
 so that I can see what transactions have taken place,
-I want to be able to print a bank statement. 
+I want to be able to print a bank statement.
+
+## Tech Stack
+
+* Ruby
+* Rspec
+* Rubocop
+* Simplecov
