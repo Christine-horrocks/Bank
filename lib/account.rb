@@ -7,12 +7,12 @@ class Account
   end
 
   def deposit(money)
-    deposit = {type: 'deposit', amount: money}
+    deposit = {date: Time.now.strftime("%d/%m/%y"), type: 'deposit', amount: money}
     @transactions << deposit
   end
 
   def withdraw(money)
-    withdrawal = {type: 'withdrawal', amount: money}
+    withdrawal = {date: Time.now.strftime("%d/%m/%y"), type: 'withdrawal', amount: money}
     @transactions << withdrawal
   end
 
