@@ -22,6 +22,9 @@ I want to a date attached to all of my transactions.
 so that I can see what transactions have taken place,
 I want to be able to print a bank statement.
 
+## Example of Use
+![Alt text](Screen Shot 2017-11-27 at 16.52.21.png "IRB_in_use")
+
 ## Tech Stack
 
 * Ruby
