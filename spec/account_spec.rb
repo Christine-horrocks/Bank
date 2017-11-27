@@ -10,4 +10,9 @@ describe Account do
     subject.deposit(100)
     expect(subject.transactions).to eq([{type: 'deposit', amount: 100}])
   end
+
+  it 'can make a withdrawal on the account' do
+    subject.withdraw(100)
+    expect(subject.transactions).to eq([{type: 'withdrawal', amount: 100}])
+  end
 end

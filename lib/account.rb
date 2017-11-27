@@ -11,4 +11,9 @@ class Account
     @transactions << deposit
   end
 
+  def withdraw(money)
+    withdrawal = {type: 'withdrawal', amount: money}
+    @transactions << withdrawal
+  end
+
 end
