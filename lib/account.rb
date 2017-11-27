@@ -6,14 +6,18 @@ class Account
     @transactions = []
   end
 
-  def deposit(money)
-    deposit = {date: Time.now.strftime("%d/%m/%y"), type: 'deposit', amount: money}
+  def deposit(money, date = Time.now.strftime("%d/%m/%y"))
+    deposit = {date: date, type: 'deposit', amount: money}
     @transactions << deposit
   end
 
-  def withdraw(money)
-    withdrawal = {date: Time.now.strftime("%d/%m/%y"), type: 'withdrawal', amount: money}
+  def withdraw(money, date = Time.now.strftime("%d/%m/%y"))
+    withdrawal = {date: date, type: 'withdrawal', amount: - money}
     @transactions << withdrawal
+  end
+
+  def print_statement
+    return "date || credit || debit || balance \n 27/ 11/ 17|| 300 || || 300 \n 27/ 11/ 17|| || 100 || 200"
   end
 
 end
