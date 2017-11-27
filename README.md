@@ -23,7 +23,7 @@ so that I can see what transactions have taken place,
 I want to be able to print a bank statement.
 
 ## Example of Use
-![Alt text](./Screen Shot 2017-11-27 at 16.52.21.png "IRB_in_use")
+![Alt text](/Screen Shot 2017-11-27 at 16.52.21.png)
 
 ## Tech Stack
 
